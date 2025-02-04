@@ -77,7 +77,46 @@
     \end{enumerate}
     
     \begin{solution}
-        Write answer
+        The classification of the attributes is as follows:
+
+        \begin{enumerate}[label=(\alph*)]
+            \item Rating of an Amazon product by a person on a scale of 1 to 5: \textbf{Ordinal}. 
+            
+            Ratings on a scale have a meaningful order or ranking, but the differences between each rating values are not necessarily equal. 
+            For example, the difference between a rating of 1 and 2 may not be the same as the difference between a rating of 4 and 5, but we can sort these ratings from
+            5 as the best all the way to the 1 as the worst rating.
+            Furthermore, for ordinal attributes like rating, we cannot perform arithmetic operations such as addition or multiplication as they are not meaningful.
+            Hence, rating has the distinctness and order properties of ordinal attributes.
+
+            \item The Internet Speed: \textbf{Ratio}. 
+            
+            The Internet speed has a meaningful difference and a true zero, meaning that ratios also make sense. 
+            For instance, 100 Mbps is twice as fast as 50 Mbps, and 0 Mbps means no internet speed.
+            Furthermore, we can perform arithmetic operations such as addition and multiplication on internet speed.
+            Hence, internet speed has the distinctness, order, and all arithmetic properties of ratio attributes.
+
+            \item Number of customers in a store: \textbf{Ratio}.
+            
+            The number of customers has a meaningful difference and a true zero, meaning that ratios also make sense.
+            To give an example, 100 customers is twice as many as 50 customers, and 0 customers means no customers.
+            Furthermore, we can perform arithmetic operations such as addition and multiplication on the number of customers.
+            Hence, the number of customers has the distinctness, order, and all arithmetic properties of ratio attributes.
+
+            \item UCF Student ID: \textbf{Nominal}. 
+            
+            The UCF student ID is a unique identifier or label for each student, but it does not have any meaningful order or ranking.
+            To give an instance, a UCF student ID of 1234567 is not better or worse than a student ID of 4567890.
+            Furthermore, we cannot perform arithmetic operations such as addition or multiplication on UCF student IDs as they are not meaningful.
+            Hence, UCF student ID has the distinctness property of nominal attributes.
+
+            \item Letter grade (A, B, C, D): \textbf{Ordinal}.
+            
+            Letter grades have a meaningful order or ranking, but the differences between each grade are not necessarily equal.
+            To illustrate, the difference between a grade of A (4.0) and B (3.25) may not be the same as the difference between a grade of C (2.50) and D (2.0), but we can
+            sort these letters from the best grade to achieve to worst grade to achieve.
+            Furthermore, we cannot perform arithmetic operations such as addition or multiplication on letter grades as they are not meaningful.
+            Hence, letter grades have the distinctness and order properties of ordinal attributes.
+        \end{enumerate}
     \end{solution}
 
     \pagebreak
@@ -118,16 +157,24 @@
     \titledquestion{Coding Question}[20]
 
     Please write a Python code to calculate Cosine similarity, and Euclidean distance using NumPy. 
-    The input can be two randomly generated vectors or fixed vectors written by yourself. 
-    Note that: For Coding Questions, please \textbf{\underline{do not}} directly call linear regression and non-linear 
-    regression built-in functions in existing library packages such as scikit-learn. You may call basic 
-    computation functions built in Numpy.
+    The input can be two randomly generated vectors or fixed vectors written by yourself.
 
     \begin{solution}
-        Write answer
+
+        Please check the source code and outputs included in the appendix named as
+
+        \begin{center}
+            \textbf{CAP\_5610\_Assignment\_2\_Solution\_Arman\_Sayan.ipynb}
+        \end{center}
+        
+        for the solution.
     \end{solution}
 
     \pagebreak
+
+    Note that: For Coding Questions, please \textbf{\underline{do not}} directly call linear regression and non-linear 
+    regression built-in functions in existing library packages such as scikit-learn. You may call basic 
+    computation functions built in Numpy.
 
     \titledquestion{Coding Question}[25]
 
@@ -147,11 +194,18 @@
 
     \begin{figure}[h]
         \centering
-        \includegraphics[width=0.65\textwidth]{linear.png}
+        \includegraphics[width=0.64\textwidth]{linear.png}
     \end{figure}
 
     \begin{solution}
-        Write answer
+
+        Please check the source code and outputs included in the appendix named as
+
+        \begin{center}
+            \textbf{CAP\_5610\_Assignment\_2\_Solution\_Arman\_Sayan.ipynb}
+        \end{center}
+        
+        for the solution.
     \end{solution}
 
     \pagebreak
@@ -176,7 +230,14 @@
     \end{figure}
 
     \begin{solution}
-        Write answer
+
+        Please check the source code and outputs included in the appendix named as
+
+        \begin{center}
+            \textbf{CAP\_5610\_Assignment\_2\_Solution\_Arman\_Sayan.ipynb}
+        \end{center}
+        
+        for the solution.
     \end{solution}
 
     \pagebreak
@@ -185,10 +246,10 @@
 
 \begin{appendix}
     \centering
-    %\begin{flushleft}  
-    %  \section{Appendix}
-    %  \includepdf[pages=-]{CAP_5610_Assignment_1_Solution_Arman_Sayan_1.pdf}
-    %\end{flushleft}
+    \begin{flushleft}  
+      \section{Appendix}
+      \includepdf[pages=-]{CAP_5610_Assignment_2_Solution_Arman_Sayan_1.pdf}
+    \end{flushleft}
 \end{appendix}
 
 \end{document}
