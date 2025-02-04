@@ -65,16 +65,18 @@
 
 \begin{questions}
     \titledquestion{Types of Attributes}[10]
-    
-    Classify the following attributes as nominal, ordinal, interval, ratio. \textbf{\underline{Explain why}}.
 
-    \begin{enumerate}[label=(\alph*)]
-        \item Rating of an Amazon product by a person on a scale of 1 to 5
-        \item The Internet Speed
-        \item Number of customers in a store.
-        \item UCF Student ID
-        \item Letter grade (A, B, C, D)
-    \end{enumerate}
+    Solution for Q1:
+    
+    %Classify the following attributes as nominal, ordinal, interval, ratio. \textbf{\underline{Explain why}}.
+
+    %\begin{enumerate}[label=(\alph*)]
+    %    \item Rating of an Amazon product by a person on a scale of 1 to 5
+    %    \item The Internet Speed
+    %    \item Number of customers in a store.
+    %    \item UCF Student ID
+    %    \item Letter grade (A, B, C, D)
+    %\end{enumerate}
     
     \begin{solution}
         The classification of the attributes is as follows:
@@ -123,21 +125,22 @@
 
     \titledquestion{Distance/Similarity Measures}[20]
 
-    Given the four boxes shown in the following figure, answer the following questions. In the 
-    diagram, numbers indicate the lengths and widths and you can consider each box to be a vector 
-    of two real numbers, length and width. For example, the top left box would be (2,1), while the 
-    bottom right box would be (3,3). Restrict your choices of similarity/distance measure to 
-    Euclidean distance and correlation. \textbf{\underline{Please explain your choice}}.
+    %Given the four boxes shown in the following figure, answer the following questions. In the 
+    %diagram, numbers indicate the lengths and widths and you can consider each box to be a vector 
+    %of two real numbers, length and width. For example, the top left box would be (2,1), while the 
+    %bottom right box would be (3,3). Restrict your choices of similarity/distance measure to 
+    %Euclidean distance and correlation. \textbf{\underline{Please explain your choice}}.
 
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.65\textwidth]{boxes.png}
-    \end{figure}
+    %\begin{figure}[h]
+    %    \centering
+    %    \includegraphics[width=0.65\textwidth]{boxes.png}
+    %\end{figure}
 
     \begin{parts}
 
-        \part[10] Which proximity measure would you use to group the boxes based on their
-        shapes (length-width ratio)?
+        \part[10] Solution for Q2 Part 1:
+        %Which proximity measure would you use to group the boxes based on their
+        %shapes (length-width ratio)?
 
         \begin{solution}
             To group the boxes based on their shapes (length-width ratio), the best proximity measure to use is a \textbf{correlation similarity measure} 
@@ -169,8 +172,9 @@
 
         \end{solution}
 
-        \part[10] Which proximity measure would you use to group the boxes based on their
-        size?
+        \part[10] Solution for Q2 Part 2:
+        %Which proximity measure would you use to group the boxes based on their
+        %size?
 
         \begin{solution}
             To group the boxes based on their size, the best proximity measure to use is \textbf{Euclidean distance} instead of correlation similarity measure.
@@ -211,8 +215,10 @@
 
     \titledquestion{Coding Question}[20]
 
-    Please write a Python code to calculate Cosine similarity, and Euclidean distance using NumPy. 
-    The input can be two randomly generated vectors or fixed vectors written by yourself.
+    Solution for Q3:
+
+    %Please write a Python code to calculate Cosine similarity, and Euclidean distance using NumPy. 
+    %The input can be two randomly generated vectors or fixed vectors written by yourself.
 
     \begin{solution}
 
@@ -227,30 +233,32 @@
 
     \pagebreak
 
-    Note that: For Coding Questions, please \textbf{\underline{do not}} directly call linear regression and non-linear 
-    regression built-in functions in existing library packages such as scikit-learn. You may call basic 
-    computation functions built in Numpy.
+    %Note that: For Coding Questions, please \textbf{\underline{do not}} directly call linear regression and non-linear 
+    %regression built-in functions in existing library packages such as scikit-learn. You may call basic 
+    %computation functions built in Numpy.
 
     \titledquestion{Coding Question}[25]
 
-    Please implement a Linear Regression to find the best linear model for the provided
-    linear data. Please plot the result using "matplotlib.pyplot".
+    Solution for Q4:
 
-    Note that
+    %Please implement a Linear Regression to find the best linear model for the provided
+    %linear data. Please plot the result using "matplotlib.pyplot".
 
-    \begin{enumerate}[label=(\arabic*)]
-        \item The linear model is in the following format $Y=mX+c$
-        \item Use MSE as the loss function
-        \item You may use “pandas” to read the csv file and load the values into two vectors $X$ and $Y$.
-        \item Use Gradient Descent for the training. You may choose fixed learning rate (such as
-        0.0001) and epochs (such as 1000) without considering mini-batch.
-        \item The result will look like the following image.
-    \end{enumerate}
+    %Note that
 
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.64\textwidth]{linear.png}
-    \end{figure}
+    %\begin{enumerate}[label=(\arabic*)]
+    %    \item The linear model is in the following format $Y=mX+c$
+    %    \item Use MSE as the loss function
+    %    \item You may use “pandas” to read the csv file and load the values into two vectors $X$ and $Y$.
+    %    \item Use Gradient Descent for the training. You may choose fixed learning rate (such as
+    %    0.0001) and epochs (such as 1000) without considering mini-batch.
+    %    \item The result will look like the following image.
+    %\end{enumerate}
+
+    %\begin{figure}[h]
+    %    \centering
+    %    \includegraphics[width=0.64\textwidth]{linear.png}
+    %\end{figure}
 
     \begin{solution}
 
@@ -267,22 +275,24 @@
 
     \titledquestion{Coding Question}[25]
 
-    Please implement a non-linear regression to find the best cubic function model for the 
-    provided non-linear data. Please plot the result, too.
+    Solution for Q5:
 
-    \begin{enumerate}[label=(\arabic*)]
-        \item The cubic function is in the following format: $Y=aX^3+bX^2+cX+d$
-        \item Use MSE as the loss function.
-        \item Use Gradient Descent for the training. You may choose fixed learning rate (such as
-        0.000001 (1e-6)) and epochs (such as 10000) without considering mini-batch. It may take
-        10-15 seconds to finish the running for 10000 steps. Please be patient.
-        \item The result will look like the following
-    \end{enumerate}
+    %Please implement a non-linear regression to find the best cubic function model for the 
+    %provided non-linear data. Please plot the result, too.
 
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.65\textwidth]{non-linear.png}
-    \end{figure}
+    %\begin{enumerate}[label=(\arabic*)]
+    %    \item The cubic function is in the following format: $Y=aX^3+bX^2+cX+d$
+    %    \item Use MSE as the loss function.
+    %    \item Use Gradient Descent for the training. You may choose fixed learning rate (such as
+    %    0.000001 (1e-6)) and epochs (such as 10000) without considering mini-batch. It may take
+    %    10-15 seconds to finish the running for 10000 steps. Please be patient.
+    %    \item The result will look like the following
+    %\end{enumerate}
+
+    %\begin{figure}[h]
+    %    \centering
+    %    \includegraphics[width=0.65\textwidth]{non-linear.png}
+    %\end{figure}
 
     \begin{solution}
 
